@@ -482,9 +482,23 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
   </div>
 
   <!-- Music tools -->
-  <div class="reveal d1" style="margin-top:38px">
+  <style>
+    .mtools-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:16px 0 20px}
+    .mtools-grid a{position:relative;display:block;border-radius:12px;overflow:hidden;border:1px solid var(--line);aspect-ratio:9/13;transition:transform .25s,border-color .25s}
+    .mtools-grid a:hover{transform:translateY(-4px);border-color:var(--music)}
+    .mtools-grid img{width:100%;height:100%;object-fit:cover;display:block}
+    .mtools-cap{position:absolute;left:0;right:0;bottom:0;padding:20px 10px 9px;font-size:12px;font-weight:600;color:#fff;background:linear-gradient(to top,rgba(0,0,0,.82),transparent)}
+    @media(max-width:640px){.mtools-grid{grid-template-columns:1fr 1fr}}
+  </style>
+  <div class="reveal d1" style="margin-top:40px">
     <div class="track-label">Tools I build for music</div>
-    <p class="sub" style="margin:8px 0 16px"><em style="color:var(--music);font-style:normal">Melodic</em> — an AI music-video studio that turns a track into cinematic, Anyma-style visuals for Reels &amp; TikTok.</p>
+    <p class="sub" style="margin:8px 0 4px"><em style="color:var(--music);font-style:normal">Melodic</em> — an AI music-video studio I built that turns any track into cinematic, Anyma-style visuals for Reels &amp; TikTok. A few of its themes:</p>
+    <div class="mtools-grid">
+      <a href="https://melodic-studio.vercel.app" target="_blank" rel="noopener"><img src="melodic/marble-awakening.jpg" alt="Marble Awakening — AI music video theme" loading="lazy"><span class="mtools-cap">Marble Awakening</span></a>
+      <a href="https://melodic-studio.vercel.app" target="_blank" rel="noopener"><img src="melodic/chrome-deity.jpg" alt="Chrome Deity — AI music video theme" loading="lazy"><span class="mtools-cap">Chrome Deity</span></a>
+      <a href="https://melodic-studio.vercel.app" target="_blank" rel="noopener"><img src="melodic/neon-megacity.jpg" alt="Neon Megacity — AI music video theme" loading="lazy"><span class="mtools-cap">Neon Megacity</span></a>
+      <a href="https://melodic-studio.vercel.app" target="_blank" rel="noopener"><img src="melodic/neon-muse.jpg" alt="Neon Muse — AI music video theme" loading="lazy"><span class="mtools-cap">Neon Muse</span></a>
+    </div>
     <a class="btn btn-ghost" href="https://melodic-studio.vercel.app" target="_blank" rel="noopener" style="border-color:var(--music);color:var(--music)">✦ Try Melodic ↗</a>
   </div>
 </section>

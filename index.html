@@ -489,6 +489,9 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
     .mtools-grid img{width:100%;height:100%;object-fit:cover;display:block}
     .mtools-cap{position:absolute;left:0;right:0;bottom:0;padding:20px 10px 9px;font-size:12px;font-weight:600;color:#fff;background:linear-gradient(to top,rgba(0,0,0,.82),transparent)}
     @media(max-width:640px){.mtools-grid{grid-template-columns:1fr 1fr}}
+    .mtool-wide{position:relative;display:block;border-radius:12px;overflow:hidden;border:1px solid var(--line);margin:16px 0 20px;transition:transform .25s,border-color .25s}
+    .mtool-wide:hover{transform:translateY(-4px);border-color:var(--music)}
+    .mtool-wide img{width:100%;display:block}
   </style>
   <div class="reveal d1" style="margin-top:40px">
     <div class="track-label">Tools I build for music</div>
@@ -500,6 +503,10 @@ footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:v
       <a href="https://melodic-studio.vercel.app" target="_blank" rel="noopener"><img src="melodic/neon-muse.jpg" alt="Neon Muse — AI music video theme" loading="lazy"><span class="mtools-cap">Neon Muse</span></a>
     </div>
     <a class="btn btn-ghost" href="https://melodic-studio.vercel.app" target="_blank" rel="noopener" style="border-color:var(--music);color:var(--music)">✦ Try Melodic ↗</a>
+
+    <p class="sub" style="margin:26px 0 4px"><em style="color:var(--music);font-style:normal">MFL Melody</em> — a free, browser-based melody, bassline, chord &amp; drum generator with one-click MIDI export. An AI Melody Assist turns a text prompt into a melody in your key:</p>
+    <a class="mtool-wide" href="https://mfl-melody.vercel.app" target="_blank" rel="noopener"><img src="mtools/mfl-melody.jpg" alt="MFL Melody — free AI melody, chord and MIDI generator" loading="lazy"><span class="mtools-cap">MFL Melody — melody &amp; MIDI generator</span></a>
+    <a class="btn btn-ghost" href="https://mfl-melody.vercel.app" target="_blank" rel="noopener" style="border-color:var(--music);color:var(--music)">♪ Open Melody Generator ↗</a>
   </div>
 </section>
 

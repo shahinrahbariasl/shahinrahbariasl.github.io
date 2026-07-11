@@ -728,7 +728,7 @@ addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;if(e.key==
   });
 
   /* 3D tilt cards */
-  document.querySelectorAll('.craft,.mcard,.now-card,.icard,.tool,.mtool-wide').forEach(card=>{
+  document.querySelectorAll('.craft,.mcard,.now-card,.icard').forEach(card=>{
     card.addEventListener('mouseenter',()=>{card.style.transition='transform .1s linear';});
     card.addEventListener('mousemove',e=>{
       const r=card.getBoundingClientRect();
